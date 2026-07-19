@@ -1,15 +1,14 @@
 {
   "builds": [
     {
-      "src": "DJANGO_IMAGE_UPLOADER/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxDuration": 90 }
+      "src": "core/wsgi.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "DJANGO_IMAGE_UPLOADER/wsgi.py"
+      "dest": "core/wsgi.py"
     }
   ]
 }

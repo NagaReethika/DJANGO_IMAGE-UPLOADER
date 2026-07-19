@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+tjkw!ktmx_9=dl-6-2-^8kgpt@@xl)tx=rv4smp_18+=_eq=v'a
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
 
@@ -87,6 +87,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # ==============================================================================
 # 3. DYNAMIC MEDIA USER FILES PIPELINE CONFIGURATION
