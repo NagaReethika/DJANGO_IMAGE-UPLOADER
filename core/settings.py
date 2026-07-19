@@ -11,12 +11,12 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+tjkw!ktmx_9=dl-6-2-^8kgpt@@xl)tx=rv4smp_18+=_eq=v'
+SECRET_KEY = 'django-insecure-+tjkw!ktmx_9=dl-6-2-^8kgpt@@xl)tx=rv4smp_18+=_eq=v'a
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
 
 # ==============================================================================
 # 1. APPLICATION REGISTRATION
